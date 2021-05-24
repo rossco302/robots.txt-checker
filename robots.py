@@ -15,7 +15,7 @@ def robots_reader(url):
 		robots_url = re.findall('^https.+?com', url)
 		robs_url = robots_url[0]
 	else:
-		return False
+		return print('url didnt work, check and try again.')
 
 	print('robots url: ' + robs_url)
 	print()
