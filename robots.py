@@ -6,9 +6,10 @@ def robots_reader(url):
 	robots_url = re.findall('^https.+?org/', url)
 	if len(robots_url) > 0:
 		robots_url = robots_url[0] + 'robots.txt'
-	robots_url = re.findall('^https.+?com/', url)
+		robots_url = re.findall('^https.+?com/', url)
 	if len(robots_url) > 0:
 		robots_url = robots_url[0] + 'robots.txt'
+		robots_url = re.findall('^https.+?com/', url)
 
 	print('robots url: ' + robots_url)
 	print()
