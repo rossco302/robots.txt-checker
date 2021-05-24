@@ -11,6 +11,9 @@ def robots_reader(url):
 	elif len(re.findall('^https.+?com/', url)) > 0:
 		robots_url = re.findall('^https.+?com/', url)
 		robs_url = robots_url[0] + 'robots.txt'
+	elif len(re.findall('^https.+?com', url)) > 0:
+		robots_url = re.findall('^https.+?com', url)
+		robs_url = robots_url[0]
 	else:
 		return False
 
@@ -28,4 +31,4 @@ def robots_reader(url):
 	
 	return print(can_scrape+'\n')
 
-robots_reader(input('check url: '))
+robots_reader('https://www.upwork.com')
