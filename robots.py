@@ -17,4 +17,4 @@ def robots_reader(url):
 	
 	return print(rp.can_fetch('*', url))
 
-robots_reader('https://www.reddit.com/r/learnpython/comments/n8l53r/robotstxt_useragent_disallow_admin/')
+robots_reader(input('check url: '))
