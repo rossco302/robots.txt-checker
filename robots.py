@@ -13,7 +13,7 @@ def robots_reader(url):
 		robs_url = robots_url[0] + 'robots.txt'
 	elif len(re.findall('^https.+?com', url)) > 0:
 		robots_url = re.findall('^https.+?com', url)
-		robs_url = robots_url[0]
+		robs_url = robots_url[0] + 'robots.txt'
 	else:
 		return print('url didnt work, check and try again.')
 
