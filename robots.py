@@ -31,4 +31,4 @@ def robots_reader(url):
 	
 	return print(can_scrape+'\n')
 
-robots_reader('https://www.upwork.com')
+robots_reader(input('check url: '))
