@@ -19,7 +19,7 @@ def robots_reader(url):
 	
 	if rp.can_fetch('*', url) == True:
 		can_scrape = 'You can scrape this website'
-	elif: rp.can_fetch('*', url) == False:
+	elif rp.can_fetch('*', url) == False:
 		can_scrape = 'You cannot scrape this website'
 	return can_scrape
 
