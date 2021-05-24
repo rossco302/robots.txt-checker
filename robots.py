@@ -28,4 +28,4 @@ def robots_reader(url):
 	
 	return print(can_scrape+'\n')
 
-robots_reader('https://docs.python.org/3/library/urllib.robotparser.html')
+robots_reader(input('check url: '))
