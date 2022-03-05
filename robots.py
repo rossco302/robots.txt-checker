@@ -31,4 +31,3 @@ def robots_reader(url):
 	
 	return print(can_scrape+'\n')
 
-robots_reader(input('check url: '))
